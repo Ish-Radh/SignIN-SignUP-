@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+
+    <link rel= "stylesheet" href="plasma.css">
+<script src="logging.js"></script>
+    <script src="signin.js"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <form  class="form" action = "authentication.php"   onsubmit = "return validation()" method = "POST"id="login" >
+        <h1 class="form-title">LOG-IN</h1>
+        <div class="form__message form__message__error">
+        </div>
+        <div class="Inputs">
+            <input type="text" class='form _input' placeholder="Enter Username" id='username' />
+
+            </input>
+
+            <div class ='form_input_error_message'></div>
+        </div>
+
+        <div class=" Inputs">
+
+                <input type="password"  placeholder="Enter Password"  id= 'password' />
+            </input>
+            <div class ='form_input_error_message'></div>
+            </div>
+        <input class="loginnnnnn" type="reset" name="" value="Login" onclick="validate()">
+
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+        <p class="form_text">
+            <a href="#" class="form_linking">Forgot your password?</a>
+        </p>
+        <p class="form_text">
+            <a  class='form_linking' href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+        </p>
+
+
+    </form>
+
+    <div id="error"></div>
+    <form action="/" method="GET" class="form form_hidden " id='createAccount'>
+
+        <h1 class ='form title'>Create Account</h1>
+        <div class="form__message form__message__error">
+        </div>
+        <div class="Inputs">
+            <input type="text" id='signupusername' class='form _input' placeholder="Username" />
+            <div class ='form_input_error_message'></div>
+        </div>
+
+        <div class=" Inputs">
+
+            <input type="password"  placeholder="Password" id="password" />
+            <div class ='form_input_error_message'></div>
+        </div>
+        <div class=" Inputs">
+
+            <input type="password"  id ="Cpassword"   placeholder="Confirm Password" />
+            <div class ='form_input_error_message'></div>
+        </div>
+        <input class="signinnnnnn" type="reset" name="" value="Signgup" onclick="validatej()">
+        <p class="form_text">
+            <a class="form_linking" href="./" id="linkLogin">Already have an account? Sign in</a>
+        </p>
+
+    </form>
+</div>
+<script src="plasma.js">
+
+
+
+</script>
+</body>
+
+</html>
